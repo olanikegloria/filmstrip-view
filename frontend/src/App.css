@@ -1,0 +1,121 @@
+/* Ensure you have these styles in your App.css */
+body{
+  background-color:   #1e283a;
+}
+#thumbnail-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.arrow {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.arrow.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.thumbnail-container {
+  display: flex;
+  overflow: hidden; /* Prevent overscroll */
+  gap: 16px; /* Add some space between thumbnails */
+}
+
+.thumbnail-container img {
+  transition: transform 0.3s;
+  border-radius: 8px; /* Rounded edges */
+}
+
+.thumbnail-container img.selected {
+  border: 2px solid black;
+  transform: scale(1.1);
+  animation: selectedAnimation 1s;
+}
+
+@keyframes selectedAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+#main-image {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin-top: 50px;
+  max-width: 1024px;
+}
+
+@keyframes flyIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fly-in {
+  animation: flyIn 1s forwards;
+}
+
+.spin {
+  animation: spin 1s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.meta-data {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 16px;
+  border-top: 1px solid #4a4a4a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+

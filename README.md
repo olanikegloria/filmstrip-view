@@ -1,43 +1,64 @@
-# README #
+# Filmstrip View Project 🎬
 
-This project requires you to develop a website template viewer. The template viewer is modeled after the filmstrip folder view in Windows Explorer.
+Welcome to the Filmstrip View project! This React application showcases a dynamic carousel of movie templates and thumbnails, complete with interactive animations and smooth transitions.
 
-### Technical Requirements ###
+## Features ✨
 
-* Develop as a Single Page Application
-* Develop both a front-end component and back-end API to retrieve the data.
-* Use a javascript front-end implementation of your choice, some suggestions might be ReactJS, Angular or AngularJS
-* Create a back-end API implementation with NodeJS/Express
+- **Carousel View**: Browse through movie templates with a smooth sliding carousel.
+- **Thumbnail Navigation**: Click on thumbnails to view the main movie image with exciting animations.
+- **Interactive Metadata**: Hover over the main image to reveal detailed metadata about each movie template.
+- **Responsive Design**: Responsive layout for seamless viewing across devices.
 
-### Reference ###
-![Example Filmstrip](https://github.com/techpacker/filmstrip-view/blob/main/images/reference.png)
+## Technologies Used 🚀
 
-### Feature Requirements ###
+- **React**: Frontend library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Vite**: Fast build tool that leverages modern JavaScript features.
+- **React Icons**: Icon library for React components.
 
-* Display the thumbnail images in a filmstrip view below the main large image
-* Set the thumbnail to have a sliding window with 4 thumbnails visible in the window at a time. 
-* Implement a "next" and "previous" link per the styles provided. The sliding window is not circular, when the first 4 thumbnails appear, the previous link should be disabled. When the end of the thumbnail set is reached, the next link should be disabled.
-  Note: The sliding window may not have a total of 4 thumbnails if the total template count is not evenly divisible by 4. There are 15 templates in the reference data.
-* Example: If there are 15 templates total, then the initial view would show 4 thumbnail images with previous disabled, then clicking "Next" would advance to the next 4 images, next would advance to the next 4, and so on. Finally, there wouild only be 3 images in the sliding window with next disabled and previous enabled.
-* When clicking on a thumbnail, the large image corresponding to that thumbnail should appear in the main window, along with the meta data about that template (ID, Cost, Description, Thumbnail File Name, Image File Name)
-* Per the reference styles and html, the thumbnail image should have a border when selected.
+## Getting Started 🏁
 
-### Reference Data ###
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/olanikegloria/filmstrip-view.git
+   cd filmstrip-view
+   ```
 
-* /data/templates.json - Array of templates and meta data
-* /images/large - Large size images of templates
-* /images/thumbnails - Thumbnail images of templates
-* /images/next.png - Button image for next link
-* /images/previous.png - Button image for previous link
-* index.html - reference HTML
-* /style/style.css - reference CSS
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser:**
+   ```
+   http://localhost:3000
+   ```
+
+## Usage 🎥
+
+- Navigate through the thumbnails to select a movie template.
+- Hover over the main image to view metadata like ID, cost, and description.
+- Enjoy smooth animations when transitioning between movie templates.
 
 
-### What if I have questions? ###
+## Demo 📹
 
-* Take your interpretation of the requirements. As long as your interpretation is defensible.
+Check out the demo video to see the Filmstrip View project in action:
+[Demo Video](https://www.loom.com/share/0338e7dffedf478eac7ceeee3f732d07?sid=969fe835-c1fd-4ca8-a19a-102b84d02801)
+## Contributing 🤝
 
-### How do I submit the project? ###
+Contributions are welcome! Please fork the repository and create a pull request with your improvements.
 
-* Submit a URL to a public github/gitlab repo
-* Make sure to include a readme to document any installation steps to run the project
+## Credits 🌟
+
+- Built with ❤️ by olanike
+
+## Favorite Part of the Project 🌈
+
+My favorite part of this project is definitely adding different animations to each movie template. It brings the movie templates to life and enhances user interaction in a fun and engaging way!
+
