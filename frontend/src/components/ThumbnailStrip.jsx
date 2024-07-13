@@ -53,8 +53,8 @@ const ThumbnailStrip = ({
 ThumbnailStrip.propTypes = {
   templates: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      cost: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
+      cost: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       thumbnail: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
@@ -64,8 +64,8 @@ ThumbnailStrip.propTypes = {
   thumbnailsPerPage: PropTypes.number.isRequired,
   selectTemplate: PropTypes.func.isRequired,
   selectedTemplate: PropTypes.shape({
-    id: PropTypes.number,
-    cost: PropTypes.number,
+    id: PropTypes.string,
+    cost: PropTypes.string,
     description: PropTypes.string,
     thumbnail: PropTypes.string,
     image: PropTypes.string,

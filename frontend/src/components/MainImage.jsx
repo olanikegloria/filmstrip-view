@@ -31,8 +31,8 @@ const MainImage = ({ selectedTemplate, animationClass }) => {
 
 MainImage.propTypes = {
   selectedTemplate: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    cost: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
+    cost: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     thumbnail: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
