@@ -18,7 +18,7 @@ const MainImage = ({ selectedTemplate, animationClass }) => {
         alt={selectedTemplate.description}
         className={`object-cover w-full h-full rounded-lg transition-transform duration-1000 ${animate ? animationClass : ''}`}
       />
-      <div className="meta-data absolute bottom-0 left-0 right-0 bg-black/85 p-4 text-white border-t border-gray-700 shadow-lg rounded-b-lg">
+      <div className="meta-data absolute bottom-0 left-0 right-0 bg-black/65 p-4 text-white border-t border-gray-700 shadow-lg rounded-b-lg">
         <p><strong>ID:</strong> {selectedTemplate.id}</p>
         <p><strong>Cost:</strong> ${selectedTemplate.cost}</p>
         <p><strong>Main image file name:</strong> {selectedTemplate.image}</p>
